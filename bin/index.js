@@ -65,8 +65,7 @@ program
             let gitUrl = gittype === 'ssh' ? 'git@git.inframe.club:fe' : 'http://git.inframe.club/fe'
             clone(`${gitUrl}/${type}-template.git`, pwd + `/${project}`, {
               success() {
-                // shell.rm('-rf', pwd + `/${project}/.git`)
-
+                shell.rm('-rf', pwd + `/${project}/.git`)
                 console.log(`项目地址: ${pwd}/${project}/`)
                 console.log('接下来你可以:')
                 console.log('')
