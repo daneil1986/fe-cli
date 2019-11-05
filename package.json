@@ -1,15 +1,18 @@
 {
-  "name": "fe-cli",
-  "version": "1.0.0",
+  "name": "cli-fe",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
-  "bin": "./src/index.js",
+  "bin": {
+    "fe-cli": "./src/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "commander": "^3.0.1"
+    "commander": "^3.0.1",
+    "inquirer": "^7.0.0"
   }
 }

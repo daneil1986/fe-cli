@@ -1,3 +1,9 @@
-console.log('..... enter ......');
+#!/usr/bin/env node
 const program = require('commander');
-program.version('0.0.1');
+
+program
+  .version(require('../package.json').version)
+  .usage('<command> [options]')
+  .command('new', 'generate a new project from a template')
+  .command('page', 'genereate a new page from a template')
+  .parse(process.argv);
