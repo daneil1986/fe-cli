@@ -19,18 +19,20 @@ program
         console.log(chalk.red(data))
       }
       console.log('目前fe-cli支持以下模板:');
-      console.log('pc   - 后台管理工程')
+      console.log('pc   - PC工程')
       console.log('h5   - 前端H5工程')
+      console.log('admin   - 后台管理工程')
 
       const prompt = inquirer.createPromptModule()
       prompt({
         type: 'list',
         name: 'type',
         message: '项目类型:',
-        default: 'pc   - 后台管理工程',
+        default: 'admin   - 后台管理工程',
         choices: [
-          'pc   - 后台管理工程',
-          'h5   - 前端H5工程'
+          'pc   - PC工程',
+          'h5   - 前端H5工程',
+          'admin   - 后台管理工程'
         ]
       }).then(res => {
         const type = res.type.split(' ')[0]
@@ -98,7 +100,8 @@ program
     console.log(chalk.blue('  $ cli-fe init'))
     console.log('');
     console.log('可用模板:')
-    console.log('pc   - 后台管理工程')
+    console.log('pc   - PC工程')
     console.log('h5   - 前端H5工程')
+    console.log('admin   - 后台管理工程')
   })
 program.parse(process.argv);
