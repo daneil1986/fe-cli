@@ -1,6 +1,6 @@
 {
-  "name": "zq-fe-cli",
-  "version": "1.0.2",
+  "name": "skr-fe",
+  "version": "1.0.0",
   "description": "",
   "main": "bin/index.js",
   "bin": {
