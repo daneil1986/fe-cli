@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "bin": {
-    "fe-cli": "./src/index.js"
+    "fe-cli": "./bin/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,6 +13,9 @@
   "license": "ISC",
   "dependencies": {
     "commander": "^3.0.1",
-    "inquirer": "^7.0.0"
+    "inquirer": "^7.0.0",
+    "chalk": "^2.4.1",
+    "figlet": "^1.2.0",
+    "shelljs": "^0.8.2"
   }
 }
